@@ -97,6 +97,22 @@ nav{
     color : var(--highlight-clr);
 }
 
+.hamburger{
+    display : none;
+    flex-direction : column;
+    gap : 10px;
+    height : 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger span{
+    width : 30px;
+    height : 5px;
+    border-radius: 10px;
+    background-color : black;
+}
+
 .mobile-nav{
     position : fixed;
     right : 0;
@@ -293,6 +309,7 @@ footer{
 
 .footer-links-container.flex{
     justify-content: center;
+    flex-direction : row;
     gap : 12px;
     margin-top : 30px;
 }
@@ -375,5 +392,15 @@ footer{
         width : 100%;
     }
 
+}
+
+@media(max-width : 600px){
+    .nav-links-container{
+        display : none;
+    }
+
+    .hamburger{
+        display : flex;
+    }
 }
 
